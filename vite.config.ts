@@ -5,6 +5,7 @@ import basicSsl from "@vitejs/plugin-basic-ssl";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "./", // Need this for twitch to load assets correctly from relative paths
   server: {
     port: 8080,
   },
